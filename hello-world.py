@@ -5,8 +5,12 @@ import streamlit as st
 from datetime import datetime
 
 # Load data
-merged_df = pd.read_csv('merged_data.csv')
+# ID file Google Drive
+file_id = "1_xWcrk4vjpTHWm1QzoxZhb9clLyM3b-5"
+url = f"https://drive.google.com/uc?id={file_id}"
 
+# Baca dataset
+merged_df = pd.read_csv(url)
 # Data Preparation
 merged_df['order_purchase_timestamp'] = pd.to_datetime(merged_df['order_purchase_timestamp'])
 merged_df['year_month'] = merged_df['order_purchase_timestamp'].dt.to_period('M')
