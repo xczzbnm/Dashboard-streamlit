@@ -28,7 +28,7 @@ It provides interactive data visualizations and filters to explore sales data.
    ```
 
 ## Data Source
-The dataset is loaded from **Google Drive**. Ensure you update the `file_id` in `app.py` to match your dataset.
+The dataset is loaded from **Google Drive**. 
 
 ## Contributing
 Feel free to submit a pull request if you'd like to contribute!
